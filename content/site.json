@@ -1,0 +1,27 @@
+{
+  "siteName": "",
+  "tagline": "",
+  "cta": { "text": "", "href": "" },
+  "hero": { "headline": "", "subheadline": "", "image": "" },
+  "about": { "title": "", "body": "" },
+  "services": [
+    { "title": "", "desc": "" }
+  ],
+  "menu": {
+    "title": "",
+    "items": [
+      { "name": "", "desc": "" }
+    ]
+  },
+  "testimonials": [
+    { "quote": "", "author": "" }
+  ],
+  "contact": {
+    "email": "",
+    "phone": "",
+    "insta": "",
+    "note": ""
+  },
+  "location": "",
+  "schema": { "type": "LocalBusiness", "sameAs": [] }
+}

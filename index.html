@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+  <title>Site</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-ac-endpoint="content/site.json">
+  <header class="header" role="banner">
+    <div class="bar container">
+      <a href="#" class="brand"><strong data-ac="brand">Brand</strong></a>
+
+      <!-- optional: mobile button; you may include markup but do not ship JS here -->
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Menu">
+        <span class="line"></span><span class="line"></span><span class="line"></span>
+      </button>
+
+      <nav class="nav" id="primary-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#menu">Menu</a>
+        <a href="#testimonials">Praise</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <h1 data-ac="hero-headline">Headline</h1>
+        <p class="lead" data-ac="hero-sub">Subheadline</p>
+        <p>
+          <a class="btn" data-ac="cta" href="#contact">Call to action</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2 data-ac="about-title">About</h2>
+        <p data-ac="about-body">Body</p>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <h2>Services</h2>
+        <div class="grid cols-3" data-ac="services"></div>
+      </div>
+    </section>
+
+    <section id="menu" class="section">
+      <div class="container">
+        <h2 data-ac="menu-title">Menu</h2>
+        <div class="menu" data-ac="menu-items"></div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section">
+      <div class="container">
+        <h2>What people say</h2>
+        <div class="grid cols-2 testimonials" data-ac="testimonials"></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p data-ac="contact-note">Contact note</p>
+        <p>
+          <a class="btn" data-ac="email-btn" href="#">Email</a>
+          <a class="btn secondary hidden" data-ac="insta" href="#" rel="me" target="_blank">Instagram</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div data-ac="footer">Footer</div>
+    </div>
+  </footer>
+
+  <script id="jsonld" type="application/ld+json">{}</script>
+  <script src="ac-loader.js" defer></script>
+</body>
+</html>
